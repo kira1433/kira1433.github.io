@@ -1,129 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aashish Chandra K - Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="media/favicon.png" type="image/png" />
-    <script
-      src="https://kit.fontawesome.com/730b9b890c.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="background">
-      <h1 class="main-text">Portfolio</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aashish Chandra — Software Engineer & Quantitative Researcher</title>
+  <meta name="description"
+    content="Aashish Chandra — Software Engineer at Rubrik (Forge). Systems, ML, and quantitative research. ICPC Asia West, Codeforces Candidate Master, WACV 2026." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="media/favicon.png" type="image/png" />
+</head>
+
+<body>
+
+  <div class="ticker">
+    <div class="ticker__track" id="tickerTrack">
+      <!-- duplicated via JS for seamless loop -->
     </div>
-    <div class="header">
-      <div class="padder">
-        <span class="kira">1433</span><span class="dot">.</span>
+  </div>
+
+  <nav class="nav">
+    <span class="nav__brand">AC/</span>
+    <a href="#experience">Experience</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="mailto:krovidiaashishchandra@gmail.com">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <div class="hero__eyebrow">Bengaluru, India — Distributed Systems, ML &amp; Quant</div>
+      <h1>Aashish Chandra</h1>
+      <p class="hero__role">Software Engineer @ Rubrik — Forge</p>
+      <p class="hero__desc">
+        I build high-availability infrastructure at Rubrik and previously built anomaly-detection
+        models on live trade data at Tower Research Capital.
+        <br>Background in competitive programming (ICPC Asia West, Codeforces Candidate Master)
+        and published ML research (WACV 2026, CVPR-W 2024, IWCMC 2023).
+      </p>
+      <div class="hero__links">
+        <a class="btn btn--solid" href="mailto:krovidiaashishchandra@gmail.com">Email me</a>
+        <a class="btn" href="https://github.com/kira1433" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/aashish-chandra/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="media/Aashish_Chandra_Resume.pdf" target="_blank" rel="noopener">Resume ↓</a>
       </div>
     </div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="achievements.html">Achievements</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="experience.html">Experience</a></li>
-      </ul>
-    </nav>
-    <div class="content">
-      <div class="filter"></div>
-      <div class="split">
-        <div class="about-me">
-          <h2>Hello<span class="dot">.</span></h2>
-          <p>
-            I'm Aashish Chandra K, a fourth-year Computer Science student at BITS
-            Pilani, Hyderabad Campus. 
-          </p><p>My current CGPA is 9.76.
-          </p>
-          <div class="social-icons">
-            <a href="https://github.com/kira1433" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a href="https://wa.me/9399988883" target="_blank"
-              ><i class="fa-brands fa-whatsapp"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/aashish-chandra/"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
+
+    <div class="termcard">
+      <div class="termcard__bar">
+        <span></span><span></span><span></span>
+        <div class="label">whoami.sh</div>
+      </div>
+      <div class="termcard__body">
+        <img src="media/me.jpeg" alt="Aashish Chandra" />
+        <div class="kv"><span>role</span><b class="tabular">SWE, Forge</b></div>
+        <div class="kv"><span>company</span><b>Rubrik</b></div>
+        <div class="kv"><span>cf_rating</span><b class="tabular">Candidate Master</b></div>
+        <div class="kv"><span>icpc_asia_west</span><b class="tabular">Rank 18</b></div>
+        <div class="kv"><span>cgpa</span><b class="tabular">9.76 / 10.0</b></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="stats" aria-label="Key stats">
+    <div class="stats">
+      <div class="stat">
+        <div class="stat__value tabular">9.76/10</div>
+        <div class="stat__label">CGPA, BITS Pilani Hyderabad — Academic Excellence</div>
+      </div>
+      <div class="stat">
+        <div class="stat__value tabular">Top 250</div>
+        <div class="stat__label">India — Codeforces Candidate Master</div>
+      </div>
+      <div class="stat">
+        <div class="stat__value tabular">Rank 18</div>
+        <div class="stat__label">ICPC Asia West Championship</div>
+      </div>
+      <div class="stat">
+        <div class="stat__value tabular">3</div>
+        <div class="stat__label">Publications — WACV'26, CVPR-W'24, IWCMC'23</div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="experience">
+    <div class="section__label">01 — Experience</div>
+
+    <div class="log__entry">
+      <div class="log__time tabular"><span class="current">●</span>Jun 2025 — Present</div>
+      <div>
+        <div class="log__role">Software Engineer, Forge</div>
+        <div class="log__org">Rubrik</div>
+        <ul class="log__points">
+          <li>Designed and shipped high-availability infrastructure enabling automatic node failover and recovery across
+            Rubrik's newest on-prem platform.</li>
+          <li>Built a hardware health-monitoring daemon in Scala and gRPC, bridging Kubernetes-based services with
+            on-host processes for real-time node health visibility.</li>
+          <li>Re-architected the legacy networking stack in CDM clusters to enable multi-subnet support, redesigning IP
+            routing and cluster operations workflows.</li>
+          <li>Built the onboarding subsystem for Oracle Cloud in Go, engineering a least-privilege IAM model and
+            encrypted credential storage.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="log__entry">
+      <div class="log__time tabular">Sep 2024 — May 2025</div>
+      <div>
+        <div class="log__role">Machine Learning Engineer</div>
+        <div class="log__org">Tower Research Capital</div>
+        <ul class="log__points">
+          <li>Developed an ML-based Trade Anomaly Detection system ingesting firm-wide trade data and quantitative
+            strategies to predict anomalous signals.</li>
+          <li>Engineered a multi-agent workflow system automating code review and documentation across the firm's C++,
+            Python, and Java codebases.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="log__entry">
+      <div class="log__time tabular">May 2024 — Aug 2024</div>
+      <div>
+        <div class="log__role">Software Engineer Intern</div>
+        <div class="log__org">Rubrik</div>
+        <ul class="log__points">
+          <li>Architected an automated Kubernetes config-validation pipeline auditing a ~190-microservice SaaS fleet
+            daily against security and reliability policies.</li>
+          <li>Built a centralized dashboard for fleet-wide trend analysis using long-running Jenkins CI/CD jobs.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="log__entry">
+      <div class="log__time tabular">May 2023 — Jul 2023</div>
+      <div>
+        <div class="log__role">Applied Science Intern</div>
+        <div class="log__org">Amazon</div>
+        <ul class="log__points">
+          <li>Researched and prototyped a Virtual Try-On system capable of multiple ASIN imposition to enhance product
+            visualization.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="research">
+    <div class="section__label">02 — Research &amp; Quantitative Work</div>
+    <div class="research">
+      <div class="research__row">
+        <div>
+          <div class="research__title">Multi-Modal Portrait Animations</div>
+          <div class="research__venue" style="margin-top:0.3rem;">First author · with Dr. Abhijit Das &amp; Dr. Sk Aziz
+            Ali · Aug 2024
           </div>
         </div>
-        <div class="pic">
-          <img src="media/me.jpeg" alt="Your Picture" />
+        <div class="research__venue">WACV 2026</div>
+        <div class="research__desc">
+          Synthesizes high-fidelity character animations from a static image, reference text, and a voice profile. A
+          transformer encoder fuses CLVP text embeddings, autoregressive audio embeddings, and VAE image embeddings into
+          one latent, then a diffusion process with cross-attention renders the animation.
+          <a class="research__link" href="https://github.com/kira1433/LAVA" target="_blank" rel="noopener">code →</a>
         </div>
       </div>
-
-      
-      
-      <div class="section">
-        <h2 class="outsidehead">Courses<span class="dot">.</span></h2>
-        <div class="filter-blue skills">
-          <div>Generative AI</div>
-          <div>Compiler Construction</div>
-          <div>Computer Networks</div>
-          <div>Cryrptography</div>
-          <div>DAA</div>
-          <div>Natural Language Processing</div>
-          <div>Deep Learning</div>
-          <div>Operating Systems</div>
-          <div>Theory of Computation</div>
-          <div>Reinforcement Learning</div>
-          <div>DSA</div>
-          <div>DBMS</div>
-          <div>MPI</div>
+      <div class="research__row">
+        <div>
+          <div class="research__title">Deepfake Video Generation via Latent Flow Diffusion</div>
+          <div class="research__venue" style="margin-top:0.3rem;">First author · with Dr. Abhijit Das · Jan 2024</div>
+        </div>
+        <div class="research__venue">CVPR-W 2024</div>
+        <div class="research__desc">
+          Combines Vision Transformer facial-feature encoding with latent flow diffusion for realistic facial transfer
+          in video, minimizing frame-to-frame artifacts. Validated with FVD/FID against deepfake-detection baselines.
+          Accepted to the DeepFake Analysis &amp; Detection workshop (DFAD) at CVPR 2024.
+          <a class="research__link" href="https://github.com/kira1433/CVPR23_LFDM" target="_blank" rel="noopener">code
+            →</a>
         </div>
       </div>
-
-      <div class="section">
-        <h2 class="outsidehead">Skills<span class="dot">.</span></h2>
-        <div class="filter-blue skills">
-          <div>PyTorch</div>
-          <div>Python</div>
-          <div>Scikit-Learn</div>
-          <div>Numpy</div>
-          <div>Pandas</div>
-          <div>OpenCV</div>
-          <div>Hugging Face</div>
-          <div>TensorFlow</div>        
-          <div>C++</div>
-          <div>C</div>
-          <div>Java</div>
-          <div>JavaScript</div>
-          <div>TypeScript</div> 
-          <div>NS3</div> 
-          <div>Docker</div>
-          <div>HTML</div>
-          <div>CSS</div>
-          <div>SQL</div>
-          <div>React</div>
-          <div>MongoDB</div>
-          <div>ExpressJS</div>
-          <div>NodeJS</div>
-          <div>Spring Boot</div>
-          <div>Selenium</div>
+      <div class="research__row">
+        <div>
+          <div class="research__title">DRL for Adaptive Bitrate Video Streaming</div>
+          <div class="research__venue" style="margin-top:0.3rem;">with Dr. Paresh Saxena · Jul 2023</div>
         </div>
-      </div>
-
-      <div class="hobbies section">
-        <h2 class="outsidehead">Interests<span class="dot">.</span></h2>
-        <div class="filter-blue">
-          <ul>
-            <li>The Latest Tech</li>
-            <li>Competitive Programming</li>
-            <li>Computer Vision</li>
-            <li>Large Language Models</li>
-            <li>Reinforcement Learning</li>
-            <li>Problem Solving</li>
-          </ul>
+        <div class="research__venue">IWCMC 2023</div>
+        <div class="research__desc">
+          Built a streaming testbed and used NS-3 to simulate 5G and satellite network conditions, training PPO and
+          gradient-shared A3C agents to pick bitrate under fluctuating bandwidth.
+          <a class="research__link" href="https://github.com/kira1433/pensieve-py38" target="_blank" rel="noopener">code
+            →</a>
         </div>
-      </div>
-
-      <div>
-        <p>© 2024 Kira 1433.</p>
       </div>
     </div>
-  </body>
+  </section>
+
+  <section id="projects">
+    <div class="section__label">03 — Projects</div>
+
+    <div class="proj-card" style="margin-bottom: 1rem;">
+      <div class="proj-card__head">
+        <div class="proj-card__title">Enhancing HR-VITON (Virtual Try-On Networks)</div>
+        <a class="gh" href="https://github.com/kira1433/HR-VITON" target="_blank" rel="noopener">github →</a>
+      </div>
+      <div class="proj-card__meta">Computer Vision · Image Processing</div>
+      <div class="proj-card__desc">Fine-tuned the HR-VITON image-based virtual try-on model on an augmented dataset of
+        resized and cropped images to better simulate real-world conditions. Trained on HPC systems.</div>
+      <div class="proj-card__tags"><span class="chip">Python</span><span class="chip">PyTorch</span><span
+          class="chip">HPC</span></div>
+    </div>
+
+    <div class="proj-grid">
+      <div class="proj-grid__item">
+        <h4>Code Generation &amp; Explainer</h4>
+        <p>LLM-based code generator/explainer trained on a web-scraped competitive programming dataset.</p>
+        <a href="https://github.com/kira1433/generate-elucidate" target="_blank" rel="noopener">github →</a>
+      </div>
+      <div class="proj-grid__item">
+        <h4>Aeroflow AI</h4>
+        <p>Air traffic control system using reinforcement learning (no ML libraries) to generate collision-avoidance
+          instructions, with a Pygame visualizer.</p>
+        <a href="https://github.com/kira1433/air-traffic-control" target="_blank" rel="noopener">github →</a>
+      </div>
+      <div class="proj-grid__item">
+        <h4>Generative AI Models</h4>
+        <p>DCGAN, CycleGAN, DDPM, VAE, and PPCA implemented in PyTorch on CelebA (200k images), with latent-space
+          arithmetic.</p>
+        <a href="https://github.com/kira1433/generative-ai-models" target="_blank" rel="noopener">github →</a>
+      </div>
+      <div class="proj-grid__item">
+        <h4>Convex Hull Visualizer</h4>
+        <p>Kirkpatrick–Seidel and Jarvis March algorithms with animated visualization, in plain HTML/CSS/JS.</p>
+        <a href="https://github.com/kira1433/Convex-Hull-Visualizer" target="_blank" rel="noopener">github →</a>
+      </div>
+      <div class="proj-grid__item">
+        <h4>RNA Folding Visualizer</h4>
+        <p>Computes and animates the optimal secondary folding structure for an input nucleotide sequence.</p>
+        <a href="https://github.com/kira1433/RNA-Folding-Visualizer" target="_blank" rel="noopener">github →</a>
+      </div>
+      <div class="proj-grid__item">
+        <h4>Decentralized Fantasy Sports Betting</h4>
+        <p>Blockchain betting application built in Python — proof-of-work, Merkle trees, and HMAC.</p>
+        <a href="https://github.com/kira1433/decentralized-fantasy-sports" target="_blank" rel="noopener">github →</a>
+      </div>
+      <div class="proj-grid__item">
+        <h4>Pascal Compiler</h4>
+        <p>Full compiler in C using Lex/Yacc — lexer, parser, semantic analyzer, 3-address code generator, and runner.
+        </p>
+        <a href="https://github.com/kira1433/compiler_assignment_3" target="_blank" rel="noopener">github →</a>
+      </div>
+      <div class="proj-grid__item">
+        <h4>LEX-style Tokenizer</h4>
+        <p>Tool that takes a set of regular expressions and returns the corresponding list of lexemes, in C++.</p>
+        <a href="https://github.com/kira1433/CS-F363-A1Q1" target="_blank" rel="noopener">github →</a>
+      </div>
+      <div class="proj-grid__item">
+        <h4>Multi-threaded DFS &amp; BFS</h4>
+        <p>Multi-threaded graph traversal in C with a focus on time-complexity analysis under concurrency.</p>
+        <a href="https://github.com/kira1433/os_ass_2" target="_blank" rel="noopener">github →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <div class="section__label">04 — Competitive Programming &amp; Achievements</div>
+    <div class="achieve">
+      <div class="achieve__card">
+        <div class="achieve__rank tabular">#18</div>
+        <div class="achieve__title">ICPC Asia West Championship</div>
+        <div class="achieve__sub">March 2024</div>
+      </div>
+      <div class="achieve__card">
+        <div class="achieve__rank tabular">#19</div>
+        <div class="achieve__title">ICPC Amritapuri Regionals</div>
+        <div class="achieve__sub">January 2024</div>
+      </div>
+      <div class="achieve__card">
+        <div class="achieve__rank tabular">#21</div>
+        <div class="achieve__title">ICPC India Preliminaries</div>
+        <div class="achieve__sub">November 2023</div>
+      </div>
+    </div>
+
+    <div class="cp-panels">
+      <div class="leadership-card">
+        <div class="leadership-card__eyebrow">Leadership</div>
+        <div class="leadership-card__title">Secretary, CRUx</div>
+        <div class="leadership-card__desc">BITS Pilani's Programming Club. Ran competitive programming activities and
+          events for the club.</div>
+        <div class="leadership-card__meta tabular">2023 — 2025</div>
+      </div>
+
+      <div class="termcard">
+        <div class="termcard__bar">
+          <span></span><span></span><span></span>
+          <div class="label">ratings.json</div>
+        </div>
+        <div class="termcard__body">
+          <a class="kv-link" href="https://codeforces.com/profile/kira1433" target="_blank" rel="noopener">
+            <span>codeforces</span><b class="tabular">1918 · Candidate Master</b>
+          </a>
+          <a class="kv-link" href="https://www.codechef.com/users/kira_1433" target="_blank" rel="noopener">
+            <span>codechef</span><b class="tabular">2071 · 5★</b>
+          </a>
+          <a class="kv-link" href="https://leetcode.com/u/kira1433/" target="_blank" rel="noopener">
+            <span>leetcode</span><b class="tabular">2169 · Guardian</b>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="skills">
+    <div class="section__label">05 — Skills</div>
+    <div class="skillgrid">
+      <div>
+        <div class=" skillgroup__label">Languages</div>
+        <div class="skillgroup__list">
+          <span class="chip">C / C++</span>
+          <span class="chip">Python</span>
+          <span class="chip">Go</span>
+          <span class="chip">Scala</span>
+          <span class="chip">Java</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Bash</span>
+        </div>
+      </div>
+      <div>
+        <div class="skillgroup__label">Systems &amp; Infra</div>
+        <div class="skillgroup__list">
+          <span class="chip">Kubernetes</span>
+          <span class="chip">Bazel</span>
+          <span class="chip">gRPC</span>
+          <span class="chip">GraphQL</span>
+          <span class="chip">Protobuf</span>
+          <span class="chip">Thrift</span>
+          <span class="chip">Systemd</span>
+          <span class="chip">Ansible</span>
+          <span class="chip">Jenkins</span>
+          <span class="chip">Sqlite</span>
+          <span class="chip">Docker</span>
+        </div>
+      </div>
+      <div>
+        <div class="skillgroup__label">ML &amp; Data</div>
+        <div class="skillgroup__list">
+          <span class="chip">PyTorch</span>
+          <span class="chip">TensorFlow</span>
+          <span class="chip">OpenCV</span>
+          <span class="chip">NumPy</span>
+          <span class="chip">Pandas</span>
+          <span class="chip">LangChain</span>
+          <span class="chip">Snowflake</span>
+          <span class="chip">Airflow</span>
+
+        </div>
+      </div>
+      <div class="skillgroup--wide">
+        <div class="skillgroup__label">CS Foundations</div>
+        <div class="skillgroup__list">
+          <span class="chip">Design &amp; Analysis of Algorithms</span>
+          <span class="chip">Theory of Computation</span>
+          <span class="chip">Compiler Construction</span>
+          <span class="chip">Cryptography</span>
+          <span class="chip">Computer Networks</span>
+          <span class="chip">Operating Systems</span>
+          <span class="chip">Database Management Systems</span>
+        </div>
+        <div class="skillgroup__list">
+          <span class="chip">Reinforcement Learning</span>
+          <span class="chip">Computer Vision</span>
+          <span class="chip">Deep Learning</span>
+          <span class="chip">Machine Learning</span>
+          <span class="chip">Natural Language Processing</span>
+          <span class="chip">Generative Artificial Intelligence</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="education">
+    <div class="section__label">06 — Education</div>
+    <div class="edu">
+      <div>
+        <div class="edu__school">BITS Pilani, Hyderabad Campus</div>
+        <div class="edu__meta">B.E. Computer Science</div>
+      </div>
+      <div class="edu__cgpa tabular">9.76<span>CGPA / 10.0 · May 2025</span></div>
+    </div>
+
+    <div class="achieve achieve--2col" style="margin-top: 2.5rem;">
+      <div class="achieve__card">
+        <div class="achieve__rank tabular">Teaching Assistant</div>
+        <div class="achieve__title"> Jan–May 2024</div>
+        <div class="achieve__sub">Data Structures &amp; Algorithms, Database Management Systems</div>
+      </div>
+      <div class="achieve__card">
+        <div class="achieve__rank tabular">Research Assistant</div>
+        <div class="achieve__title">Jul 2023–Dec 2024</div>
+        <div class="achieve__sub">Computer Vision, Reinforcement Learning</div>
+      </div>
+      <div class="achieve__card">
+        <div class="achieve__rank tabular">Academic Excellence</div>
+        <div class="achieve__title">100% Merit-Based Scholarship</div>
+        <div class="achieve__sub">Awarded to the Top 10 Students in college</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <a href="mailto:krovidiaashishchandra@gmail.com">krovidiaashishchandra@gmail.com</a>
+      <a href="https://github.com/kira1433" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/aashish-chandra/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div>Bengaluru, India</div>
+  </footer>
+
+  <script>
+    // Build the ticker with duplicated content for a seamless CSS loop.
+    const items = [
+      ["CF RATING", "Candidate Master — Top 250 India"],
+      ["ICPC ASIA WEST", "Rank 18"],
+      ["ICPC AMRITAPURI", "Rank 19"],
+      ["CGPA", "9.76 / 10.0"],
+      ["PUBLISHED", "WACV 2026"],
+      ["PUBLISHED", "CVPR-W 2024"],
+      ["PUBLISHED", "IWCMC 2023"],
+      ["CURRENT", "Software Engineer, Rubrik — Forge"],
+    ];
+    const track = document.getElementById("tickerTrack");
+    const html = items.map(([label, val]) => `<span><b>${label}</b>${val}</span>`).join("");
+    track.innerHTML = html + html; // duplicate for seamless loop
+  </script>
+</body>
+
 </html>
